@@ -89,13 +89,13 @@ li.active .icon {
 }
 
 li.active .text {
-  transform: translateY(-5px) translateX(10px);
+  transform: translateY(0px) translateX(5px);
 }
 
 .text {
   position: absolute;
   bottom: 15px;
-  left: 0px;
+  left:5px;
   transform: translateY(80px);
   transition: 0.5s ease-in-out;
 }
@@ -127,6 +127,7 @@ main p {
 
   nav:hover {
     width: 12rem;
+    border-bottom-right-radius: 350px;
   }
 
   nav:hover .text{
