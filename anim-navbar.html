@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="anim-navbar.css" />
+    <link rel="import" href="fonts/Roboto-Regular.ttf">
+    <title>Animated Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <li class="active">
+              <span class="hicon icon">
+                <img src="images/house.png" alt="" />
+              </span>
+              <label for="home" class="text">Home</label>
+              <input type="radio" checked="checked" name="mark" id="home">
+            </li></a
+          >
+        </li>
+        <li>
+            <a href="#">
+              <li>
+                <span class="micon icon">
+                  <img src="images/mail-inbox-app.png" alt="" />
+                </span>
+                <label for="mail" class="text">Mail</label>
+              <input type="radio" name="mark" id="mail">
+              </li></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <li>
+                <span class="picon icon">
+                  <img src="images/podcast.png" alt="" />
+                </span>
+                <label for="podcast" class="text">Podcast</label>
+              <input type="radio" name="mark" id="Podcast">
+              </li></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <li>
+                <span class="bicon icon">
+                  <img src="images/app-store.png" alt="" />
+                </span>
+                <label for="store" class="text">Store</label>
+              <input type="radio" name="mark" id="store">
+              </li></a>
+          </li>
+          <li>
+            <a href="#">
+              <li>
+                <span class="sicon icon">
+                  <img src="images/settings.png" alt="" />
+                </span>
+                <label for="settings" class="text">Settings</label>
+              <input type="radio" name="mark" id="settings">
+              </li></a
+            >
+          </li>
+          <!-- <div class="pointer"></div> -->
+
+      </ul>
+    </nav>
+
+    <script>
+        const libank = document.querySelectorAll('input');
+
+        libank.forEach((li1) => {
+
+            li1.addEventListener('click', ()=> {
+
+                if(li1.classList.contains('active')){
+
+                }else{
+                    li1.classList.add('active');
+                }
+            })
+        })
+    </script>
+  </body>
+</html>
